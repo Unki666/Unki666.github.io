@@ -1,0 +1,276 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 0;
+}
+
+header {
+  background-color: white;
+  color: black;
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 15vw;
+  height: auto;
+  display: flex;
+}
+
+nav {
+  order: 2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 2vw;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: darkgray;
+}
+
+#home {
+  font-size: 2vw;
+  margin: 11vw 0;
+  color: #fff;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 4vw;
+}
+
+#about {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#properties {
+  text-align: center;
+  padding: 2vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.property {
+  width: 25%;
+  margin-bottom: 2vw;
+  padding: 1.5vw;
+  border-radius: 1vw;
+  display: flex;
+  border-radius: 2vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-self: stretch;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-text {
+  width: 100%;
+  text-align: left;
+}
+
+.property-image {
+  width: 100%;
+  height: auto;
+  margin-top: 2vw;
+}
+
+.property-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1vw;
+}
+
+.button {
+  font-size: 1.7vw;
+  display: inline-block;
+  background-color: #4c8bafa9;
+  color: #fff;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  margin-top: 1vw;
+  border-radius: 1vw;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #456ca09a;
+  color: #fff;
+}
+
+.button1 {
+  font-size: 1.3vw;
+  display: inline-block;
+  background-color: #4c8bafdc;
+  color: #fff;
+  padding: 1vw 2vw;
+  text-decoration: none;
+  margin-top: 1vw;
+  border-radius: 1vw;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button1:hover {
+  background-color: #456ca09a;
+  color: #fff;
+}
+
+footer {
+  color: #fff;
+  padding: 2vw;
+  background-color: #333;
+  text-align: center;
+}
+
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+p.footer-info {
+  margin: 10px 0;
+}
+
+#services {
+  background-image: url(services.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#services li {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#services li:before {
+  content: '\2022';
+  color: wheat;
+  font-size: 20px;
+  position: absolute;
+  left: -20px;
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    background-size:200%;
+  }
+  .logo {
+    width: 35vw;
+    display: flex;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    order: 3;
+    width: 100%;
+    margin-top: 1vw;
+  }
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  nav li {
+    margin-right: 1vw;
+    margin-bottom: 0;
+  }
+  nav a {
+    font-size: 4vw;
+    margin-bottom: 0.5vw;
+  }
+
+  #home {
+    font-size: 5vw;
+    margin: 5vw 0;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  .property {
+    width: 100%;
+  }
+
+  .property-image {
+    width: 100%;
+  }
+
+  .button,
+  .button1 {
+    font-size: 5vw;
+    border-radius: 3vw;
+  }
+}
